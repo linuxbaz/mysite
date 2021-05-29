@@ -44,7 +44,7 @@ class AuthorListView(generic.ListView):
 
 class AuthorDetailView(generic.DetailView):
     model = models.Author
-    template_name = "catalog/author_list.html"
+    template_name = "catalog/author_detail.html"
 
 class LoanedBooksByUserListView(LoginRequiredMixin,generic.ListView):
     """
