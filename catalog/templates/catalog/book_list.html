@@ -4,6 +4,7 @@
     <h1>Book List</h1>
 
     {% if book_list %}
+    <a href="{% url 'book_create' %}">new book</a>
     <ul>
 
       {% for book in book_list %}

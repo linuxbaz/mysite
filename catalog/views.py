@@ -38,6 +38,10 @@ class BookDetailView(generic.DetailView):
     model = models.Book
     template_name = "catalog/book_detail.html"
 
+class BookCreate(generic.CreateView):
+    model = models.Book
+    fields = '__all__'
+
 class AuthorListView(generic.ListView):
     model = models.Author
     template_name = "catalog/author_list.html"

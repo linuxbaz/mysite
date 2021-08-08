@@ -20,3 +20,8 @@ class RenewBookForm(forms.Form):
 
         # Remember to always return the cleaned data.
         return data
+
+class NewBook(forms.Form):
+
+    def clean_renewal_date(self):
+        data = self.cleaned_data['renewal_date']

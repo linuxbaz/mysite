@@ -51,7 +51,7 @@ class Book(models.Model):
         """
         Creates a string for the Genre. This is required to display genre in Admin.
         """
-        return ', '.join([ genre.name for genre in self.genre.all()[:3] ])
+        return ', '.join([ genre.name for genre in self.genre.all()[:2] ])
 
     display_genre.short_description = 'OGenre'
 
